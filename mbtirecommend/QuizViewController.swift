@@ -43,6 +43,13 @@ class QuizViewController: UIViewController {
     private var answers: [Bool] = []
     private var currentIndex: Int = 0
     
+    private let traits: [Character] = [
+        "I", "E", "E", "E",     // E/I
+        "S", "N", "S", "N",     // S/N
+        "T", "F", "T", "F",     // T/F
+        "J", "P", "J", "P"      // J/P
+    ]
+    
     
     // MARK: – Lifecycle
     override func viewDidLoad() {
@@ -101,15 +108,24 @@ class QuizViewController: UIViewController {
     
     // MARK: – MBTI 계산 로직
     private func calculateMBTI() -> String {
-        // 0...3  -> E/I, 4...7  -> S/N, 8...11 -> T/F, 12...15 -> J/P
-        func score(in range: Range<Int>) -> Int {
-            return answers[range].filter { $0 }.count
+        var result: [Character: Int] = [
+            "E": 0, "I": 0,
+            "S": 0, "N": 0,
+            "T": 0, "F": 0,
+            "J": 0, "P": 0
+        ]
+        
+        for (index, answer) in answers.enumerated() {
+            let trait = traits[index]
+            if answer {
+                result[trait, default: 0] += 1
+            }
         }
         
-        let ei = score(in: 0..<4)  >= 2 ? "E" : "I"
-        let sn = score(in: 4..<8)  >= 2 ? "S" : "N"
-        let tf = score(in: 8..<12) >= 2 ? "T" : "F"
-        let jp = score(in: 12..<16) >= 2 ? "J" : "P"
+        let ei = result["E"]! >= result["I"]! ? "E" : "I"
+        let sn = result["S"]! >= result["N"]! ? "S" : "N"
+        let tf = result["T"]! >= result["F"]! ? "T" : "F"
+        let jp = result["J"]! >= result["P"]! ? "J" : "P"
         
         return ei + sn + tf + jp
     }
