@@ -19,3 +19,12 @@ MBTI 유형은 개인의 성격적 경향을 잘 설명해주는 도구입니다
 | 🗺️ 지도 보기 | 추천 장소를 지도에서 핀으로 시각화 |
 | 🔁 다시 테스트하기 | 결과 화면에서 언제든지 테스트 재진행 가능 |
 | 🔄 직관적인 UI | 애니메이션, 그라데이션 배경, 물결 디자인 등 감성적 인터페이스 제공 |
+
+
+![Image](https://github.com/user-attachments/assets/a45bc6ad-613c-4391-bcb9-d685189e03e1)
+
+
+![Screenshot 2025-06-18 at 4 24 56 PM](https://github.com/user-attachments/assets/be885a1c-d4f1-4c68-a6c3-e98eab3c7e67)
+![Screenshot 2025-06-18 at 4 25 57 PM](https://github.com/user-attachments/assets/cd601057-bb88-4b83-8767-6a2fc847774d)
+![Screenshot 2025-06-18 at 4 26 54 PM](https://github.com/user-attachments/assets/91d62fee-56b5-4331-ab02-e312620d4f9f)
+![Screenshot 2025-06-18 at 4 27 04 PM](https://github.com/user-attachments/assets/662e8b61-65d8-4168-8d3d-490830d86823)
