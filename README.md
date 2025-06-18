@@ -122,5 +122,5 @@
 
 🎬 4. 시연 영상
 
-YouTube 링크: 
+YouTube 링크: https://youtu.be/VU-TOZBFnPo
 
